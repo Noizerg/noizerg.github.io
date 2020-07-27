@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор валют</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="jquery.toast.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <img src="img/dollar.jpg" alt="" class="money_img" />
+    <h1>Калькулятор валют</h1>
+    <p>Выберите валюту и количество для обмена</p>
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="USD" selected>USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+      <div class="swap-rate-container">
+        <button class="btn" id="rate_btn">Обмен</button>
+        <div class="rate" id="rate"></div>
+      </div>
+      <div class="currency">
+        <select id="currency-two">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="RUB" selected>RUB</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.toast.min.js"></script>
+  </body>
+</html>
