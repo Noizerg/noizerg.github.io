@@ -93,4 +93,5 @@ settingsBtn.addEventListener("click", () => settings.classList.toggle("hide"));
 settingsForm.addEventListener("change", (e) => {
   difficulty = e.target.value;
   localStorage.setItem("difficulty", difficulty);
+  location.reload();
 });
