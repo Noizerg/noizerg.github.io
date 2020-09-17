@@ -17,8 +17,6 @@ function displayWord()
 {
     wordEl.innerHTML = `${selectedWord.split('').map(letter =>`<span class ="letter">${correctLetters.includes(letter.toUpperCase()) ? letter.toUpperCase() : ''}</span>`).join('')}`
     const innerWord = wordEl.innerText.replace(/\n/g,'');
-    console.log(innerWord);
-    console.log(selectedWord);
     if (innerWord === selectedWord)
     {
 
